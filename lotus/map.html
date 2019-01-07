@@ -1,0 +1,45 @@
+<html>
+<head>
+  
+  <title>Google Maps Multiple Markers</title>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1fkdrBEDRz_prL0VarnpAfQVKF_MMMlU&callback=initMap"
+  type="text/javascript"></script>
+</head>
+
+<body>
+  <div id="map" style="height: 400px; width: 100%;">
+</div>
+<script type="text/javascript">
+    var locations = [
+      ['LOTUS HOTEL-SAMEERA', 13.066647, 80.270112,1],
+      ['LOTUS APARTMENTS,BARKIT ROAD, T.Nagar', 13.034192, 80.235831,2],
+      ['Venkatraman Street, T.Nagar', 13.042334, 80.242802,3],
+      
+    ];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 13,
+      center: new google.maps.LatLng(13.066647, 80.270112),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) { 
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
+</body>
+</html>

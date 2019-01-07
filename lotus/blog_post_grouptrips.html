@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- set the encoding of your site -->
+    <meta charset="utf-8">
+    <!-- set the viewport width and initial-scale on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotus Hotel</title>
+    <!-- include the site stylesheets -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/colors.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/jquery.countdown.css" type="text/css">
+    <link rel="stylesheet" href="css/animations.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/datepicker.css" type="text/css" media="all">
+    <!-- Bootstrap Dropdown Hover CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/bootstrap-dropdownhover.min.css" type="text/css" media="all">
+    <!-- Fonts CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" type="text/css">
+    <!-- Range slider CSS -->
+    <link rel="stylesheet prefetch" href="css/jquery-ui.css" type="text/css">
+    <!-- flex slider CSS -->
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+    <link href="assets/css/arjupk.css" rel="stylesheet"/>
+    <link href="assets/css/demo.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="assets/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/nucleo-icons.css" rel="stylesheet">
+    <style>
+        h3{
+            font-weight: 500;
+            color:#e77817;
+        }
+    </style>
+    <style>
+        #main{
+            margin-top:3%;
+        }
+        .logo{
+            margin-top: -1%;
+        }
+        @media (max-width: 600px) {
+
+            .nav-change>a{
+                width: 100%;
+            }
+        }
+    </style>
+    <style>
+        .nav-change{
+            margin-right: 2%;
+        }
+        @media (max-width: 600px) {
+
+            .nav-change{
+                margin-right: 0;
+            }
+        }
+    </style>
+    <style>
+        .logo{
+            margin-left:-8%;
+        }
+        .nav>li>a{
+            font-weight: 900;
+            color: black;
+        }
+        .dropdown-menu>li>a{
+            font-weight: 900;
+            color: black;
+        }
+        @media (max-width: 600px) {
+            .logo{
+                margin-left: -25%;
+            }
+        }
+    </style>
+    <style>
+        .contact-bar{
+            background-color: #e77817;
+            height:34px;
+        }
+        .top-contact,.top-social{
+            position: absolute;
+            color: white;
+        }
+        .top-contact{
+            margin-top:0.9%;
+            margin-left:20.5%;
+        }
+        .top-social{
+            margin-left:56%;
+            margin-top:0.6%;
+        }
+        .f-nav>ul>li>a{
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+
+            .contact-bar{
+                height: 55px;
+            }
+            .top-contact,.top-social{
+                position: relative;
+                margin-left: 0;
+                text-align: center;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+<!-- main container of all the page elements -->
+<div id="wrapper">
+    <!-- header -->
+    <div class="contact-bar">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="top-contact">
+                    <p style="font-weight: 600;font-size: 12px;">For Bookings Contact &nbsp;:&nbsp;+91 73581 66111</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-inline social-networks top-social">
+                    <li><a href="https://www.facebook.com/TheLotusApartmentHotels/"><span class="icon-facebook"></span></a></li>
+                    <li><a href="https://twitter.com/twtthelotus"><span class="icon-twitter"></span></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCPOh20jW0IJOE6xh7MGQdKw"><span class="icon-youtube"></span></a></li>
+                    <li><a href="https://www.instagram.com/thelotushotels/?hl=en"><span class="icon-instagram"></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <header id="header">
+        <div class="navcus-wrapper">
+            <div class="row">
+                <div class="col-xs-12">
+                    <strong class="logo"><a href="index.html"><img src="images/Lotus_Logo.png" alt="Hotel"></a></strong>
+                    <!-- main navigation -->
+                    <nav class="navbar navbar-default">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span></span></button>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li ><a href="index.html">HOME</a></li>
+                                <li><a href="sameera.html">HOTELS</a></li>
+                                <li class="dropdown ">
+
+                                    <a href="hotels.html" class="dropdown-toggle disable" data-hover="dropdown">APARTMENT HOTELS</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="burkit.html">Burkit Road, T.Nagar</a></li>
+                                        <li><a href="venkataraman.html">Venkatraman Street, T.Nagar</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="amenities.html">AMENITIES</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right nav-change">
+
+                                <li><a href="OFFERS.html">OFFERS</a></li>
+                                <li><a href="tariff.html">TARIFF</a></li>
+                                <li><a href="gallery.html" class="dropdown-toggle disable" data-hover="dropdown">GALLERY</a></li>
+                                <li><a href="contact.html">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- banner -->
+    <div style="padding: 2%;"></div>
+    <!-- Navigation -->
+    <div class="navigation-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-7">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active">BLOG POSTS</li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- contain main informative part of the site -->
+    <main id="main">
+
+        <div class="cd-section section-white" id="blogs">
+            <div class="blog-5">
+                <div class="container">
+                    <h2 class="title text-center" style="font-weight:600;color:#e77817;font-size: 220%">Why Group Trips are the best thing to happen to you</h2>
+                    <div style="color: black;font-size:110%;">
+                        <h3 style="font-size: 150%;color:#000;"> Though solo trips top bucket lists for many of us, gang trips are the most fun, safe,
+                            and easy way to travel. A bunch of fun friends is possibly the best thing to happen
+                            on a leisure break. From exploring new places together to taking quirky groupie
+                            poses what’s not to like about gang trips?
+                            <br><br><br>
+                            <strong>Here is why groups trips are always better.</strong>
+                        </h3>
+                        <br>
+                        <h3>1. The squad that travels together stays together</h3>
+                        <br>
+                        Imagine having to figure out every single aspect of your trip all by yourself. With
+                        all the packing, planning, arranging the stay, deciding the budget and the places to
+                        visit, more often than not you might forget the most important aspect of a trip..
+                        'Having Fun'. With group trips, the responsibilities can be easily split among your
+                        friends. So, save yourself from the stress and enjoy your trip to the fullest.
+                        <br>
+                        <h3>2. Don’t burn a hole in your pocket</h3>
+                        <br>
+                        How often have we heard of people saving up for their dream trips? A dream trip is
+                        often associated with a famished wallet. The biggest counter to this myth is the
+                        Group trip. A budget can be easily devised and the costs can be seamlessly divided.
+                        Put your Value Education classes to good use, after all, Sharing is Caring.
+                        <br>
+                        <h3>3. No apprehension</h3>
+                        <br>
+                        Group trips also give us an opportunity to interact with new people and get to
+                        know the ones we know better. It will also help us understand ourselves better.
+                        You might not really be a mountain person but you might go on a trek because the
+                        rest of your gang wants to. This might end up being a liberating experience and
+                        would bring you closer to your group. From little things like handling a budget and
+                        working as a team to retaining your individuality in a group, there is a lot to learn
+                        from such trips.
+                        <br>
+                        <h3>4. Right on track</h3>
+                        <br>
+                        Want to have your entire trip planned? Travelling in a group lets you participate in
+                        scheduled excursions at your leisure, while still giving you free time to explore on
+                        your own. It means you can spend as much (or as little) time with your group
+                        members as you choose, without needing to skip anything on your must-see list.
+                        <br>
+                        <h3>5. Meals Ready!</h3>
+                        <br>
+                        If you can eat off a banana leaf, you've won life already. The traditional south Indian food is served on a banana leaf. A single plate of food encompasses everything, from the customary payasam to buttermilk; there's no limit to the assortment. Walk into any restaurant around noon to enjoy a sumptuous lunch.
+                        <br>
+                        <h3>6. Each person brings a different perspective</h3>
+                        <br>
+                        One of the best parts of being on tour is learning from the peer travellers. Since
+                        everyone comes from different backgrounds and learning experiences to the table,
+                        each offers unique insight or perspective to some of the many famous (or
+                        not-so-famous) sights you’ll see during your trip. There’s also nothing better than
+                        watching someone on tour experience a new city or country for the first time, it’s a
+                        great experience you can relive yourself!
+                        <br>
+                        <br>
+                        <h3 style="font-size: 150%;color:#000;"><strong>When are you planning your group trip?</strong></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div style="padding: 2%"></div>
+    <!-- footer of the page -->
+    <div class="b-container">
+        <div class="footer-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="#wrapper" class="go-top">
+                            <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+                        </a>
+                        <strong class="logo"><a href="index.html"><img src="images/f-logo.png" alt="Hotel"></a></strong>
+                        <!-- footer navigation -->
+                        <nav class="f-nav">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="aboutus.html#aboutus">ABOUT US</a></li>
+                                <li><a href="amenities.html">AMENITIES</a></li>
+                                <li><a href="hotels.html">LOTUS APARTMENT HOTELS</a></li>
+
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="sameera.html">LOTUS HOTELS</a></li>
+                                <li><a href="OFFERS.html">OFFERS</a></li>
+                                <li><a href="tariff.html">TARIFF</a></li>
+                                <li><a href="gallery.html">GALLERY</a></li>
+                                <li><a href="contact.html">contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>&copy; <a href="#" class="link">Lotus Hotels</a>. All rights reserved. Design by <a href="http://www.omniadigital.in">Omnia Digital</a></p>						</div>
+                    <div class="col-sm-6">
+                        <ul class="list-inline social-networks">
+                            <li><a href="https://www.facebook.com/TheLotusApartmentHotels/"><span class="icon-facebook"></span></a></li>
+                            <li><a href="https://twitter.com/twtthelotus"><span class="icon-twitter"></span></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCPOh20jW0IJOE6xh7MGQdKw"><span class="icon-youtube"></span></a></li>
+                            <li><a href="https://www.instagram.com/thelotushotels/?hl=en"><span class="icon-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<!-- include jQuery library -->
+<script type="text/javascript" src="../../../ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- Range Slider JavaScript -->
+<script type="text/javascript" src='js/jquery-ui.min.js'></script>
+<script type="text/javascript" src='js/range-slider.js'></script>
+<!-- Same Height JavaScript -->
+<script type="text/javascript" src='js/same-height.js'></script>
+<!-- include custom JavaScript -->
+<script type="text/javascript" src="js/jquery.main.js"></script>
+<script type="text/javascript" src="js/animations.min.js"></script>
+<script type="text/javascript" src="js/jquery.plugin.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.js"></script>
+<script type="text/javascript" src="js/timber.master.min.js"></script>
+<!-- Bootstrap Dropdown Hover JS -->
+<script type="text/javascript" src="js/bootstrap-dropdownhover.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" defer src="js/jquery.flexslider.js"></script>
+<script type="text/javascript" src="js/myscript.js"></script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5a904e5e4b401e45400d28eb/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+
+</html>

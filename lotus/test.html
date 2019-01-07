@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       #mycustommap {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="mycustommap"></div>
+    <script>
+      function initMap() {
+        var lotusvenkat = new google.maps.LatLng(13.042334, 80.242802);
+    	var sameera = new google.maps.LatLng(13.066647, 80.270112);
+    	var barkit = new google.maps.LatLng(13.034192, 80.235831);
+        var map = new google.maps.Map(document.getElementById('mycustommap'), {
+          zoom: 12,
+          center: lotusvenkat
+        });
+        var marker = new google.maps.Marker({
+    	position: sameera,
+    	map: map,
+    	title: 'Hello World!'
+  		});
+  
+  
+   		var marker1 = new google.maps.Marker({
+   		position: lotusvenkat,
+	    map: map,
+	    title: 'Hello World!'
+	  	});
+  
+		var marker2 = new google.maps.Marker({
+		position: barkit,
+		map: map,
+		title: 'Hello World!'
+		});
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp9wucoQaJHcXUGv8DbJeOxZnVOkw-m2Q&callback=initMap">
+    </script>
+  </body>
+</html>

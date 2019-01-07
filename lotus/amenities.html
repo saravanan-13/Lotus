@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lotus Hotel</title>
+	<!-- include the site stylesheets -->
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/colors.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/jquery.countdown.css" type="text/css">
+	<link rel="stylesheet" href="css/animations.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/datepicker.css" type="text/css" media="all">
+	<!-- Bootstrap Dropdown Hover CSS -->
+	<link rel="stylesheet" href="css/animate.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/bootstrap-dropdownhover.min.css" type="text/css" media="all">
+	<!-- Fonts CSS -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" type="text/css">
+	<!-- Range slider CSS -->
+	<link rel="stylesheet prefetch" href="css/jquery-ui.css" type="text/css">
+	<!-- flex slider CSS -->
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+	<link href="assets/css/arjupk.css" rel="stylesheet"/>
+    <link href="assets/css/demo.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="assets/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+	<link href="assets/css/nucleo-icons.css" rel="stylesheet">
+	<style>
+		#main{
+			margin-top: 3%;
+		}
+		.logo{
+			margin-top: -1%;
+		}
+		.tit{
+		font-size:200%;
+		}
+		@media (max-width: 600px) {
+
+			#main{
+				margin-top: -4%;
+			}
+			.info{
+			margin-top:-22%;
+			}
+			.other{
+			margin-top:-13%;
+			font-size:210%;
+			}
+			
+			.para2,.para3{
+			margin-top:-30%;
+			}
+			.para2{
+			margin-top:-37%;
+			}
+			.tit{
+			font-size:210%
+			}
+			.insi{
+			font-size:200%;
+			}
+		
+		}
+	</style>
+	<style>
+		.nav-change{
+			margin-right: -2%;
+		}
+		@media (max-width: 600px) {
+
+			.nav-change{
+				margin-right: 0;
+			}
+		}
+	</style>
+
+	<style>
+		.logo{
+			margin-left:-10%;
+		}
+		.nav>li>a{
+			font-weight: 900;
+			color: black;
+		}
+		.dropdown-menu>li>a{
+			font-weight: 900;
+			color: black;
+		}
+		@media (max-width: 600px) {
+			.logo{
+				margin-left: -25%;
+			}
+		}
+	</style>
+	<style>
+		.contact-bar{
+			background-color: #e77817;
+			height:34px;
+		}
+		.top-contact,.top-social{
+			position: absolute;
+			color: white;
+		}
+		.top-contact{
+			margin-top:0.9%;
+			margin-left:20.5%;
+		}
+		.top-social{
+			margin-left:56%;
+			margin-top:0.6%;
+		}
+		.f-nav>ul>li>a{
+			color: white;
+		}
+
+		@media (max-width: 600px) {
+
+			.contact-bar{
+				height: 55px;
+			}
+			.top-contact,.top-social{
+				position: relative;
+				margin-left: 0;
+				text-align: center;
+			}
+
+		}
+
+	</style>
+
+
+</head>
+<body>
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<div class="contact-bar">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="top-contact">
+						<p style="font-weight: 600;font-size: 12px;">For Bookings Contact &nbsp;:&nbsp;+91 73581 66111</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<ul class="list-inline social-networks top-social">
+						<li><a href="https://www.facebook.com/TheLotusApartmentHotels/"><span class="icon-facebook"></span></a></li>
+						<li><a href="https://twitter.com/twtthelotus"><span class="icon-twitter"></span></a></li>
+						<li><a href="https://www.youtube.com/channel/UCPOh20jW0IJOE6xh7MGQdKw"><span class="icon-youtube"></span></a></li>
+						<li><a href="https://www.instagram.com/thelotushotels/?hl=en"><span class="icon-instagram"></span></a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<!-- header -->
+		<header id="header">
+			<div class="navcus-wrapper">
+				<div class="row">
+					<div class="col-xs-12">
+						<strong class="logo"><a href="index.html"><img src="images/Lotus_Logo.png" alt="Hotel"></a></strong>
+						<!-- main navigation -->
+						<nav class="navbar navbar-default"> 
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span></span></button>
+							</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav navbar-left">
+									<li ><a href="index.html">HOME</a></li>
+									<li><a href="sameera.html">HOTELS</a></li>
+									<li class="dropdown ">
+
+										<a href="hotels.html" class="dropdown-toggle disable" data-hover="dropdown">APARTMENT HOTELS</a>
+										<ul class="dropdown-menu">
+											<li><a href="burkit.html">Burkit Road, T.Nagar</a></li>
+											<li><a href="venkataraman.html">Venkatraman Street, T.Nagar</a></li>
+										</ul>
+									</li>
+									<li class="active"><a href="amenities.html">AMENITIES</a></li>
+								</ul>
+								<ul class="nav navbar-nav navbar-right nav-change">
+									<li><a href="OFFERS.html">OFFERS</a></li>
+									<li><a href="tariff.html">TARIFF</a></li>
+									<li><a target="_blank" href="https://thelotus.in/blog">BLOG</a></li>
+									<li><a href="gallery.html" class="dropdown-toggle disable" data-hover="dropdown">GALLERY</a></li>
+									<li><a href="contact.html">CONTACT</a></li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- banner -->
+		<div style="padding: 2%;"></div>
+		<!-- Navigation -->
+		<div class="navigation-bar">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-7">
+						<ol class="breadcrumb">
+							<li><a href="index.html">Home</a></li>
+							<li class="active">AMENITIES</li>
+						</ol>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<!-- contain main informative part of the site -->
+		<main id="main">
+			<!-- about us section -->
+			<div class="cd-section section-white" id="blogs">
+			<div class="blog-5">
+            <div class="container">
+                <h3 class="title text-center tit" style="font-weight:500">AMENITIES AT LOTUS</h3>
+                <p style="color: black;font-size:110%;margin-top: -2%;text-align: center">Regardless of the purpose of your trip,
+					find a range of amenities to suit your needs at our hotel
+					apartments in Chennai. From holding conference calls, to
+					getting your heart rate pumping in the fitness corner,
+					we have the services to make your trip a hassle-free one.</p>
+                <div class="margin-50"></div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="card" data-background="image" style="
+                        min-height:100%;
+  background:linear-gradient(0deg,rgba(25,25,25,0.6),rgba(25,25,25,0.6)),url('images/on-the-go_gi-160992881_63_370x314.jpg');
+  background-size:cover;">
+							<div class="card-body" >
+								<a href="#pablo">
+									<h3 class="card-title">THE HUB OF CHENNAI</h3>
+								</a>
+								<p class="card-description">
+									Located in the centre of Chennai and all its major commercial and corporate attractions, anything and everything is now just within a few miles from your favourite hotel and apartment hotels.
+								</p>
+                                <div class="card-footer">
+	                                <div class="author">
+	                                </div>
+	                            </div>
+							</div>
+						</div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="card" data-background="image" style="
+                min-height:100%;
+  background:linear-gradient(0deg,rgba(25,25,25,0.6),rgba(25,25,25,0.6)),url('images/gym_43_370x314.jpg');
+  background-size:cover;">
+							<div class="card-body">
+								<a href="#pablo">
+									<h3 class="card-title">CLOSE TO THE SEA</h3>
+								</a>
+								<p class="card-description">
+									Situated just 2 miles from the second longest beach in the world, Marina Beach, Lotus is the ideal option for a long walk down history as well as loaded with fun, games and activities for people across all age groups.
+								</p>
+                                <div class="card-footer">
+	                                <div class="author">
+	                                </div>
+	                            </div>
+							</div>
+						</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-xs-12">
+                        <div class="card" data-background="image"  style="
+                         min-height:100%;
+  background:linear-gradient(0deg,rgba(25,25,25,0.6),rgba(25,25,25,0.6)),url('images/lobby---lounge-1.jpg');
+  background-size:cover;">
+							<div class="card-body">
+								<a href="#pablo">
+									<h3 class="card-title">HEALTH STUDIO</h3>
+								</a>
+								<p class="card-description">
+									We at Lotus are staunch believers that an active human is a healthy human. Therefore, we have with us a modest health studio so that you may keep yourself fit even when you are away from your home or your gym. Stay in your prime, all the time.
+								</p>
+                                <div class="card-footer">
+	                                <div class="author">
+	                                </div>
+	                            </div>
+							</div>
+						</div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="card" data-background="image"  style="
+                          min-height:100%;
+  background:linear-gradient(0deg,rgba(25,25,25,0.6),rgba(25,25,25,0.6)),url('images/citadines---lady-by-the-beach_jpg_63_370x314.jpg');
+  background-size:cover;">
+							<div class="card-body">
+								<a href="#pablo">
+									<h3 class="card-title">TAXI SERVICE</h3>
+								</a>
+								<p class="card-description">
+									We provide full end taxi service for Airport Pick-up and Drop-off. Regardless of the time, we make sure that you reach where you want to be and come back when you want to.
+								</p>
+                                <div class="card-footer">
+	                                <div class="author">
+	                                </div>
+	                            </div>
+							</div>
+						</div>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div class="card" data-background="image"  style="
+                 min-height:100%;
+  background:linear-gradient(0deg,rgba(25,25,25,0.6),rgba(25,25,25,0.6)),url('images/sr_india_chennai_cit-omr_steam_sauna--hr.jpg');
+  background-size:cover;">
+
+							<div class="card-body">
+								<a href="#pablo">
+									<h3 class="card-title">RESIDENTS’ LOUNGE</h3>
+								</a>
+								<p class="card-description">
+									Fitted with exquisite wall art and quirky furniture, our residents’ lounge is the ideal space to meet with friends, engage in some reading or even catch up on work.
+								</p>
+                                <div class="card-footer">
+	                                <div class="author">
+	                                </div>
+	                            </div>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="features-5 section-image"  style="
+
+       min-height:100%;
+  background:linear-gradient(0deg,rgba(25,25,25,0.6),rgba(25,25,25,0.6)),url('images/24.jpg');
+  background-size:cover;">
+
+    		<div class="container" >
+                <div class="row">
+                    <div class="ml-auto mr-auto">
+                        <h2 class="title text-center other">OTHER FACILITIES & AMENITIES</h2>
+                    </div>
+                </div>
+    			<div class="row" style="margin-left: 10%;">
+    				<div class="col-sm-4 ml-auto" style="border-bottom:0">
+    					<div class="info para1">
+    						<div style="text-align: left">
+    						<h4 class="title insi">Security</h4>
+    						<p>Secured Rooms</p>
+							<p>Secured Parking</p>
+							<p>Safe & Locker</p>
+							<p>24/7 CCTV Surveillance</p>
+							<br><br>
+
+    					</div>
+    				</div>
+    			</div>
+
+    				<div class="col-sm-4 mr-auto" style="border-bottom:0">
+    					<div class="info para2">
+    						<div style="text-align: left">
+    						<h4 class="title insi">Refresh & Relax</h4>
+    						<p>Room Service</p>
+							<p>Complimentary Breakfast</p>
+							<p>Restaurant</p>
+							<p>In-Room Kitchenette</p>
+							<p>A/C and Non-A/C Rooms</p><br>
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="col-sm-4 ml-auto" style="border-bottom:0">
+    					<div class="info para3">
+    						<div style="text-align: left">
+    						<h4 class="title insi">Helping Hand</h4>
+    						<p>Travel Desk</p>
+							<p>Laundry</p>
+							<p>Wi-Fi Connectivity</p>
+							<p>Health Studio</p>
+							<p>24-Hrs Check-In & Check-Out</p>
+							<p>Conference Room</p>
+							</div>
+    					</div>
+    				</div>
+    		</div>
+        </div>
+    </div>
+			<!-- about -->
+			
+			<!-- Services block -->
+			<div style="background: #fff; width: 100%" class="centerimage">
+				<img src="images/Amenities.jpg">
+			</div>
+			<!-- our team -->
+			
+		</main>
+		<!-- footer of the page -->
+		<div class="b-container">
+			<div class="footer-nav">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<a href="#wrapper" class="go-top">
+								<span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+							</a>
+							<strong class="logo"><a href="index.html"><img src="images/f-logo.png" alt="Hotel"></a></strong>
+							<!-- footer navigation -->
+							<nav class="f-nav">
+								<ul class="nav navbar-nav navbar-left">
+									<li><a href="index.html">HOME</a></li>
+									<li><a href="aboutus.html#aboutus">ABOUT US</a></li>
+									<li><a href="amenities.html">AMENITIES</a></li>
+									<li><a href="hotels.html">LOTUS APARTMENT HOTELS</a></li>
+
+								</ul>
+								<ul class="nav navbar-nav navbar-right">
+									<li><a href="sameera.html">LOTUS HOTELS</a></li>
+									<li><a href="OFFERS.html">OFFERS</a></li>
+									<li><a href="tariff.html">TARIFF</a></li>
+									<li><a href="gallery.html">GALLERY</a></li>
+									<li><a href="contact.html">contact</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<p>&copy; <a href="#" class="link">Lotus Hotels</a>. All rights reserved. Design by <a href="http://www.omniadigital.in">Omnia Digital</a></p>						</div>
+						<div class="col-sm-6">
+							<ul class="list-inline social-networks">
+								<li><a href="https://www.facebook.com/TheLotusApartmentHotels/"><span class="icon-facebook"></span></a></li>
+								<li><a href="https://twitter.com/twtthelotus"><span class="icon-twitter"></span></a></li>
+								<li><a href="https://www.youtube.com/channel/UCPOh20jW0IJOE6xh7MGQdKw"><span class="icon-youtube"></span></a></li>
+								<li><a href="https://www.instagram.com/thelotushotels/?hl=en"><span class="icon-instagram"></span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<!-- include jQuery library -->
+	<script type="text/javascript" src="../../../ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- Range Slider JavaScript -->
+	<script type="text/javascript" src='js/jquery-ui.min.js'></script>
+	<script type="text/javascript" src='js/range-slider.js'></script>
+	<!-- Same Height JavaScript -->
+	<script type="text/javascript" src='js/same-height.js'></script>
+	<!-- include custom JavaScript -->
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<script type="text/javascript" src="js/animations.min.js"></script>
+	<script type="text/javascript" src="js/jquery.plugin.js"></script>
+	<script type="text/javascript" src="js/jquery.countdown.js"></script>
+	<script type="text/javascript" src="js/timber.master.min.js"></script>
+	<!-- Bootstrap Dropdown Hover JS -->
+	<script type="text/javascript" src="js/bootstrap-dropdownhover.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+	<script type="text/javascript" defer src="js/jquery.flexslider.js"></script> 
+	<script type="text/javascript" src="js/myscript.js"></script>
+	<!--Start of Tawk.to Script-->
+	<script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/5a904e5e4b401e45400d28eb/default';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+	</script>
+	<!--End of Tawk.to Script-->
+</body>
+
+</html>

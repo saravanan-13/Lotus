@@ -1,0 +1,82 @@
+/*----------------------------------------*/
+/*  5. Gallery Area
+/*----------------------------------------*/
+.gallery-item {width: 25%; overflow: hidden;}
+.thumb > img {max-width: 100%;}
+.gallery-hover a {
+    border: 1px solid #fbfafa;
+    border-radius: 50%;
+    color: #ffffff;
+    display: inline-table;
+    font-size: 24px;
+    height: 38px;
+    margin: 0 8px;
+    position: relative;
+    text-align: center;
+    transition: all 0.2s linear 0s;
+    width: 38px;
+}
+.gallery-hover {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scaleY(0);
+    transition: all 0.5s ease 0s;
+    visibility: hidden;
+    width: 100%;
+}
+.gallery-item:hover .gallery-hover {
+    opacity: 1;
+    transform: scaleY(1);
+    visibility: visible;
+}
+.gallery-icon {
+    bottom: 0;
+    height: 40px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
+.gallery-hover a i {
+    display: table-cell;
+    vertical-align: middle;
+}
+.gallery-hover a:hover {
+    background: #ffffff none repeat scroll 0 0;
+    color: #b5876d;
+}
+.gallery-filter, .event-menu {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.gallery-filter button, .event-menu button {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 0 none;
+    color: #444444;
+    font-family: "raleway";
+    font-size: 18px;
+    line-height: 17px;
+    padding: 0 21px;
+}
+.gallery-filter button:focus, .gallery-filter button.active, .event-menu button:focus, .event-menu button.active {
+    color: #b5876d;
+}
+.gallery-icon span {
+    left: 50%;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+}
+.gallery-icon span img{transition: all 0.3s ease-in-out 0s}
+.gallery-icon span.s-img, .gallery-icon a:hover span.p-img {display: none;}
+.gallery-icon a:hover span.s-img {display: block;}
